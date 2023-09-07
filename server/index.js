@@ -1,5 +1,6 @@
 import express from 'express';
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 import cors from 'cors';
 import { MONGODBURL, PORT } from './config.js';
 import { Book } from './models/bookModel.js';
