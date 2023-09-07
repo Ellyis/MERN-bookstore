@@ -17,7 +17,7 @@ const EditBook = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get(`http://localhost:5555/books/${id}`)
+        axios.get(`https://mern-bookstore-server.vercel.app/books/${id}`)
             .then(res => {
                 setTitle(res.data.title);
                 setAuthor(res.data.author);
@@ -37,7 +37,7 @@ const EditBook = () => {
             publishYear
         }
         setLoading(true);
-        axios.put(`http://localhost:5555/books/${id}`, newBook)
+        axios.put(`https://mern-bookstore-server.vercel.app/books/${id}`, newBook)
             .then(() => {
                 setLoading(false);
                 navigate('/');
