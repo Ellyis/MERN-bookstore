@@ -1,7 +1,8 @@
 import express from 'express';
 // import mongoose from 'mongoose';
 const mongoose = require('mongoose');
-import cors from 'cors';
+// import cors from 'cors';
+const cors = require('cors');
 import { MONGODBURL, PORT } from './config.js';
 import { Book } from './models/bookModel.js';
 import bookRoute from './routes/bookRoute.js';
